@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
-| Date             : Sun Nov 19 05:53:31 2023
+| Date             : Mon Nov 20 10:24:49 2023
 | Host             : DESKTOP-LITJ59L running 64-bit major release  (build 9200)
 | Command          : report_power -file dac2_power_routed.rpt -pb dac2_power_summary_routed.pb -rpx dac2_power_routed.rpx
 | Design           : dac2
@@ -29,20 +29,20 @@ Table of Contents
 1. Summary
 ----------
 
-+--------------------------+--------------+
-| Total On-Chip Power (W)  | 19.786       |
-| Design Power Budget (W)  | Unspecified* |
-| Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 19.545       |
-| Device Static (W)        | 0.241        |
-| Effective TJA (C/W)      | 2.7          |
-| Max Ambient (C)          | 31.2         |
-| Junction Temperature (C) | 78.8         |
-| Confidence Level         | Low          |
-| Setting File             | ---          |
-| Simulation Activity File | ---          |
-| Design Nets Matched      | NA           |
-+--------------------------+--------------+
++--------------------------+----------------------------------+
+| Total On-Chip Power (W)  | 27.316 (Junction temp exceeded!) |
+| Design Power Budget (W)  | Unspecified*                     |
+| Power Budget Margin (W)  | NA                               |
+| Dynamic (W)              | 26.902                           |
+| Device Static (W)        | 0.413                            |
+| Effective TJA (C/W)      | 2.7                              |
+| Max Ambient (C)          | 10.7                             |
+| Junction Temperature (C) | 99.3                             |
+| Confidence Level         | Low                              |
+| Setting File             | ---                              |
+| Simulation Activity File | ---                              |
+| Design Nets Matched      | NA                               |
++--------------------------+----------------------------------+
 * Specify Design Power Budget using, set_operating_conditions -design_power_budget <value in Watts>
 
 
@@ -52,16 +52,16 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Slice Logic    |     0.243 |      188 |       --- |             --- |
-|   LUT as Logic |     0.201 |       67 |     48000 |            0.14 |
-|   Register     |     0.022 |      100 |     96000 |            0.10 |
+| Slice Logic    |     0.408 |      188 |       --- |             --- |
+|   LUT as Logic |     0.348 |       67 |     48000 |            0.14 |
+|   Register     |     0.040 |      100 |     96000 |            0.10 |
 |   CARRY4       |     0.014 |        2 |     16000 |            0.01 |
 |   BUFG         |     0.006 |        1 |        32 |            3.13 |
 |   Others       |     0.000 |        6 |       --- |             --- |
-| Signals        |     0.348 |      150 |       --- |             --- |
-| I/O            |    18.953 |       45 |       338 |           13.31 |
-| Static Power   |     0.241 |          |           |                 |
-| Total          |    19.786 |          |           |                 |
+| Signals        |     0.570 |      150 |       --- |             --- |
+| I/O            |    25.925 |       45 |       338 |           13.31 |
+| Static Power   |     0.413 |          |           |                 |
+| Total          |    27.316 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -71,16 +71,16 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     0.741 |       0.623 |      0.118 |       NA    | Unspecified | NA         |
-| Vccaux    |       1.800 |     0.731 |       0.693 |      0.038 |       NA    | Unspecified | NA         |
-| Vcco33    |       3.300 |     5.360 |       5.356 |      0.004 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     1.252 |       1.010 |      0.242 |       NA    | Unspecified | NA         |
+| Vccaux    |       1.800 |     1.007 |       0.949 |      0.059 |       NA    | Unspecified | NA         |
+| Vcco33    |       3.300 |     7.333 |       7.329 |      0.004 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
-| Vccbram   |       1.000 |     0.007 |       0.000 |      0.007 |       NA    | Unspecified | NA         |
+| Vccbram   |       1.000 |     0.016 |       0.000 |      0.016 |       NA    | Unspecified | NA         |
 | Vccadc    |       1.800 |     0.020 |       0.000 |      0.020 |       NA    | Unspecified | NA         |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 
@@ -136,10 +136,10 @@ Table of Contents
 +--------+-----------+
 | Name   | Power (W) |
 +--------+-----------+
-| dac2   |    19.545 |
-|   O1   |     0.065 |
-|   s1   |     0.273 |
-|     b1 |     0.236 |
+| dac2   |    26.902 |
+|   O1   |     0.099 |
+|   s1   |     0.462 |
+|     b1 |     0.388 |
 +--------+-----------+
 
 

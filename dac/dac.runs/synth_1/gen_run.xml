@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="synth_1" LaunchPart="xc7s75fgga484-1" LaunchTime="1700329309">
   <File Type="PA-TCL" Name="dac.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="dac_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="dac_reports.tcl"/>
   <File Type="RDS-RDS" Name="dac.vds"/>
   <File Type="RDS-UTIL" Name="dac_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="dac_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="dac.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="dac_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="dac_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/imports/new/oneshot_universal.v">
@@ -53,9 +50,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022"/>
     <Step Id="synth_design"/>
   </Strategy>
 </GenRun>

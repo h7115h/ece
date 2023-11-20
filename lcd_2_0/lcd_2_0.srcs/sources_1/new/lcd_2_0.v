@@ -127,7 +127,7 @@ begin
                         10'b0000_0010_00 : {LCD_RS, LCD_RW, LCD_DATA} = 10'b1_0_0011_0111; //7
                         10'b0000_0001_00 : {LCD_RS, LCD_RW, LCD_DATA} = 10'b1_0_0011_1000; //8
                         10'b0000_0000_10 : {LCD_RS, LCD_RW, LCD_DATA} = 10'b1_0_0011_1001; //9
-                        10'b0000_0000_01 : {LCD_RS, LCD_RW, LCD_DATA} = 10'b1_0_0011_0100; //0
+                        10'b0000_0000_01 : {LCD_RS, LCD_RW, LCD_DATA} = 10'b1_0_0011_0000; //0
                     endcase
                 end
                 else {LCD_RS, LCD_RW, LCD_DATA} = 10'b0_0_0000_1111;

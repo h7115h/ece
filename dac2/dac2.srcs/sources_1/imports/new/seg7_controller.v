@@ -7,8 +7,8 @@ output reg [7:0] seg_data;
 output reg [7:0] seg_sel;
 
 bin2bcd b1(clk, rst, bin, bcd);
-always@(posedge clk or posedge rst) begin
-    if(rst) seg_sel <= 8'b11111110;
+always@(posedge clk or negedge rst) begin
+    if(!rst) seg_sel <= 8'b11111110;
     else begin
         seg_sel <= {seg_sel[6:0], seg_sel[7]};
     end

@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
-| Date         : Fri Nov 17 18:38:50 2023
+| Date         : Mon Nov 20 09:38:13 2023
 | Host         : DESKTOP-LITJ59L running 64-bit major release  (build 9200)
 | Command      : report_utilization -file lcd_2_0_utilization_synth.rpt -pb lcd_2_0_utilization_synth.pb
 | Design       : lcd_2_0
@@ -148,13 +148,13 @@ Warning! LUT value is adjusted to account for LUT combining.
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
 | FDCE     |   48 |        Flop & Latch |
-| LUT6     |   22 |                 LUT |
+| LUT6     |   21 |                 LUT |
 | OBUF     |   19 |                  IO |
-| LUT2     |   18 |                 LUT |
-| LUT3     |   14 |                 LUT |
+| LUT2     |   19 |                 LUT |
 | IBUF     |   14 |                  IO |
-| LUT5     |   11 |                 LUT |
-| LUT4     |    5 |                 LUT |
+| LUT5     |   12 |                 LUT |
+| LUT3     |   12 |                 LUT |
+| LUT4     |    7 |                 LUT |
 | LUT1     |    1 |                 LUT |
 | FDPE     |    1 |        Flop & Latch |
 | BUFG     |    1 |               Clock |

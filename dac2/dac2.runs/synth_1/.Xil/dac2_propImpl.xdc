@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:C:/Users/user/Desktop/github/ece_exp2/dac2/dac2.srcs/constrs_1/new/dac2.xdc rfile:../../../dac2.srcs/constrs_1/new/dac2.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/Users/user/Desktop/github/ece/dac2/dac2.srcs/constrs_1/new/dac2.xdc rfile:../../../dac2.srcs/constrs_1/new/dac2.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:1 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN W3 [get_ports add_sel]
 set_property src_info {type:XDC file:1 line:2 export:INPUT save:INPUT read:READ} [current_design]

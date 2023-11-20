@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
-| Date         : Fri Nov 17 18:39:36 2023
+| Date         : Mon Nov 20 09:38:54 2023
 | Host         : DESKTOP-LITJ59L running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file lcd_2_0_control_sets_placed.rpt
 | Design       : lcd_2_0
@@ -59,10 +59,10 @@ Table of Contents
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | No           | No                    | No                     |               0 |            0 |
-| No           | No                    | Yes                    |              42 |           13 |
+| No           | No                    | Yes                    |              42 |           17 |
 | No           | Yes                   | No                     |               0 |            0 |
 | Yes          | No                    | No                     |               0 |            0 |
-| Yes          | No                    | Yes                    |               7 |            3 |
+| Yes          | No                    | Yes                    |               7 |            2 |
 | Yes          | Yes                   | No                     |               0 |            0 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
@@ -73,8 +73,8 @@ Table of Contents
 +------------------+----------------+------------------+------------------+----------------+--------------+
 |   Clock Signal   |  Enable Signal | Set/Reset Signal | Slice Load Count | Bel Load Count | Bels / Slice |
 +------------------+----------------+------------------+------------------+----------------+--------------+
-|  LCD_E_OBUF_BUFG | LCD_RS_i_1_n_0 | O1/rst           |                3 |              7 |         2.33 |
-|  LCD_E_OBUF_BUFG |                | O1/rst           |               13 |             42 |         3.23 |
+|  LCD_E_OBUF_BUFG | LCD_RS_i_1_n_0 | O1/rst           |                2 |              7 |         3.50 |
+|  LCD_E_OBUF_BUFG |                | O1/rst           |               17 |             42 |         2.47 |
 +------------------+----------------+------------------+------------------+----------------+--------------+
 
 

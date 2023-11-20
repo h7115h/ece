@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:C:/Users/user/Desktop/github/ece_exp2/lcd_2_0/lcd_2_0.srcs/constrs_1/new/lcd_2_0.xdc rfile:../../../lcd_2_0.srcs/constrs_1/new/lcd_2_0.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/Users/user/Desktop/github/ece/lcd_2_0/lcd_2_0.srcs/constrs_1/new/lcd_2_0.xdc rfile:../../../lcd_2_0.srcs/constrs_1/new/lcd_2_0.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:9 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN A6 [get_ports LCD_E]
 set_property src_info {type:XDC file:1 line:10 export:INPUT save:INPUT read:READ} [current_design]
