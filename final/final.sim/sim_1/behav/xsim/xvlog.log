@@ -1,0 +1,8 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/user/Desktop/github/ece/final/final.srcs/sources_1/new/final.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module final
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/user/Desktop/github/ece/final/final.srcs/sources_1/imports/new/oneshot_universal.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module oneshot_universal
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/user/Desktop/github/ece/final/final.srcs/sim_1/new/final_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module final_tb
+WARNING: [VRFC 10-3248] data object 'cd1' is already declared [C:/Users/user/Desktop/github/ece/final/final.srcs/sim_1/new/final_tb.v:13]
+WARNING: [VRFC 10-9364] second declaration of 'cd1' is ignored [C:/Users/user/Desktop/github/ece/final/final.srcs/sim_1/new/final_tb.v:13]

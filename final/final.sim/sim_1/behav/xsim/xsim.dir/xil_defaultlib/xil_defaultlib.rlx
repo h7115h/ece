@@ -1,0 +1,8 @@
+0.7
+2020.2
+Oct 14 2022
+05:20:55
+C:/Users/user/Desktop/github/ece/final/final.sim/sim_1/behav/xsim/glbl.v,1665704903,verilog,,,,glbl,,,,,,,,
+C:/Users/user/Desktop/github/ece/final/final.srcs/sim_1/new/final_tb.v,1702043971,verilog,,,,final_tb,,,,,,,,
+C:/Users/user/Desktop/github/ece/final/final.srcs/sources_1/imports/new/oneshot_universal.v,1700379819,verilog,,C:/Users/user/Desktop/github/ece/final/final.srcs/sim_1/new/final_tb.v,,oneshot_universal,,,,,,,,
+C:/Users/user/Desktop/github/ece/final/final.srcs/sources_1/new/final.v,1702048060,verilog,,C:/Users/user/Desktop/github/ece/final/final.srcs/sources_1/imports/new/oneshot_universal.v,,final,,,,,,,,
