@@ -279,7 +279,7 @@ always @(posedge clk or negedge rst) begin
                 end
                 endcase
             end
-            else begin//นใ
+            else begin
                 if (cnt >= 1000) begin
                     cnt <= 0;
                 end else begin
@@ -387,7 +387,7 @@ always @(posedge clk or negedge rst) begin
                 end
                 endcase
             end
-            else begin//นใ
+            else begin
                 if (cnt >= 50) begin
                     cnt <= 0;
                 end else begin
@@ -441,7 +441,7 @@ always @(posedge clk or negedge rst) begin
                 end
                 endcase
             end
-            else begin//นใ
+            else begin
                 if(emergency) begin
                     cnt <= cnt + 1;
                 end

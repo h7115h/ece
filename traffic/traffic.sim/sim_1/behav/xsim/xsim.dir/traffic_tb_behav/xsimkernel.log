@@ -2,3 +2,6 @@ Running: xsim.dir/traffic_tb_behav/xsimk.exe -simmode gui -wdb traffic_tb_behav.
 Design successfully loaded
 Design Loading Memory Usage: 7144 KB (Peak: 7144 KB)
 Design Loading CPU Usage: 0 ms
+Simulation completed
+Simulation Memory Usage: 15780 KB (Peak: 15780 KB)
+Simulation CPU Usage: 2093 ms
